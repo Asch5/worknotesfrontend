@@ -2,7 +2,16 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { setCredentials } from '../../features/auth/authSlice';
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://worknotes-api.onrender.com',
+    // baseUrl: 'https://worknotes-api.onrender.com',
+    //baseUrl: 'http://localhost:3500',
+    baseUrl:
+        'https://rhkk4q757osg4kcsnt7htd7vu40fpmxv.lambda-url.eu-north-1.on.aws',
+    // baseUrl: [
+    //     'https://worknotes-api.onrender.com',
+    //     'http://localhost:3500',
+    //     'https://rhkk4q757osg4kcsnt7htd7vu40fpmxv.lambda-url.eu-north-1.on.aws',
+    // ],
+
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         let token = getState().auth.token;
