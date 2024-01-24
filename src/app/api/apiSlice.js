@@ -5,7 +5,7 @@ const baseQuery = fetchBaseQuery({
     // baseUrl: 'https://worknotes-api.onrender.com',
     //baseUrl: 'http://localhost:3500',
     baseUrl:
-        'https://rhkk4q757osg4kcsnt7htd7vu40fpmxv.lambda-url.eu-north-1.on.aws',
+        'https://hfcpkut1hc.execute-api.eu-north-1.amazonaws.com/default/myBackEnd',
     // baseUrl: [
     //     'https://worknotes-api.onrender.com',
     //     'http://localhost:3500',
